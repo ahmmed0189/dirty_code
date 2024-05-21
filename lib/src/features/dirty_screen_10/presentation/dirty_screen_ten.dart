@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_10/presentation/ave_cart.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenTen extends StatelessWidget {
@@ -12,66 +13,10 @@ class DirtyScreenTen extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/100'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Hans',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/101'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Helga',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/102'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Udo',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/103'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Olgun',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
+            AveCart(imageUrl: "https://picsum.photos/100", name: 'Hans'),
+            AveCart(imageUrl: "https://picsum.photos/101", name: 'Helga'),
+            AveCart(imageUrl: "https://picsum.photos/102", name: 'Udo'),
+            AveCart(imageUrl: "https://picsum.photos/103", name: 'Olgun'),
           ],
         ),
       ),
