@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+outline_material_icons: ^1.0.0
+
 
 dev_dependencies:
   flutter_test:

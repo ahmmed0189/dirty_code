@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_11/presentation/party_oct.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenEleven extends StatelessWidget {
@@ -12,34 +13,10 @@ class DirtyScreenEleven extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Abrissparty'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Apres Ski'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Oktoberfest'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Club night'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
+            PartyOct(titel: 'Abrissparty'),
+            PartyOct(titel: 'Apres Ski'),
+            PartyOct(titel: 'Oktoberfest'),
+            PartyOct(titel: 'Club night'),
           ],
         ),
       ),
